@@ -1,16 +1,22 @@
 .about{
   position: absolute;
-  width: 40vw;
+  width: 33vw;
   height: 100%;
-  background-color: #171717;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
 }
+
 .about img{
   max-width: 200px;
 }
 .aboutWrapper{
-  padding: 150px 20px 140px;
+  padding: 150px 50px 140px;
+}
+@media all and (max-width: 600px) {
+  .about{
+     width: 100vw;
+  }
 }
 .blurb{
   font-size: 23px;
