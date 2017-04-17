@@ -1,0 +1,19 @@
+.about{
+  position: absolute;
+  width: 40vw;
+  height: 100%;
+  background-color: #171717;
+  color: white;
+  text-align: center;
+}
+.about img{
+  max-width: 200px;
+}
+.aboutWrapper{
+  padding: 150px 20px 140px;
+}
+.blurb{
+  font-size: 23px;
+
+  line-height: 1.4em;
+}
