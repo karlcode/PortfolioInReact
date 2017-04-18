@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-motion": "^0.4.8"
+    "react-motion": "^0.4.8",
+    "react-pdf": "^1.6.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

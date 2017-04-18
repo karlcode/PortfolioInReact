@@ -3,21 +3,17 @@ import '../styles/About.css';
 
 class About extends Component {
   render() {
-    const clicked = this.props.clicked;
-    return (
-      <div className="about">
-        <div className="aboutWrapper">
-        <img src="http://www.bostonglobe.com/rf/image_585w/Boston/2011-2020/2012/08/23/BostonGlobe.com/Ideas/Images/26word1a.jpg"  alt="logo" />
-        <article className="blurb">
-           
-            {clicked ? (
-              <div>
-                  <p>
+    var content;
+    if (this.props.clicked){
+      content =   <div><p>
                   Projects
-                  </p>
-              </div>
-            ) : (
-              <div>
+                  </p></div>
+    }else if (this.props.clicked2){
+      content =   <div><p>
+                  Resume
+                  </p></div>
+    }else {
+      content =   <div>
                   <p>
                   Aspiring product manager/ software engineer
                   </p>
@@ -28,10 +24,13 @@ class About extends Component {
                   UNSW Graduate
                   </p>
               </div>
-            )}
-
-
-
+    }
+    return (
+      <div className="about">
+        <div className="aboutWrapper">
+        <img src="http://www.bostonglobe.com/rf/image_585w/Boston/2011-2020/2012/08/23/BostonGlobe.com/Ideas/Images/26word1a.jpg"  alt="logo" />
+        <article className="blurb">
+          {content}
         </article>
         </div>
       </div>
