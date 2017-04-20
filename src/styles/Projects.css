@@ -1,0 +1,42 @@
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width:66.666vw;
+}
+.project-box{
+    display: block;
+    width: 33.33%;
+    padding-bottom: 33.33%;
+    position: relative;
+ 
+}
+
+.project-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+.project-blurb{
+    line-height: 0;
+    z-index: 1;
+    position: absolute;
+    padding: 5%;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    background-clip: content-box;
+    opacity:0;
+    transform: translate3d(0px,0px,0px);
+    transition: all ease 0.5s;
+}
+.project-blurb:hover{
+    opacity:0.9;
+    background-color: ghostwhite;
+}

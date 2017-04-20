@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import '../styles/About.css';
-
+import me from '../assets/me.jpg'
 class About extends Component {
   render() {
     var content;
     if (this.props.clicked){
-      content =   <div><p>
+      content =   <div><h1>
                   Projects
-                  </p></div>
+                  </h1></div>
     }else if (this.props.clicked2){
-      content =   <div><p>
+      content =   <div><h1>
                   Resume
-                  </p></div>
+                  </h1></div>
     }else {
       content =   <div>
+                  <h1 href="http://google.com">
+                  Karl Li
+                  </h1>
                   <p>
                   Aspiring product manager/ software engineer
                   </p>
@@ -28,7 +31,7 @@ class About extends Component {
     return (
       <div className="about">
         <div className="aboutWrapper">
-        <img src="http://www.bostonglobe.com/rf/image_585w/Boston/2011-2020/2012/08/23/BostonGlobe.com/Ideas/Images/26word1a.jpg"  alt="logo" />
+        <img src={me}  alt="logo" />
         <article className="blurb">
           {content}
         </article>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Container.css';
 import Projects from './Projects.js'
 import Resume from './Resume.js'
-
+import logo from '../assets/logo.svg'
 class Container extends Component {
 
 
@@ -27,7 +27,10 @@ class Container extends Component {
                 <Projects/> 
                 : 
              
-                <p>Projects</p>
+                <div className="panel-title">
+                <img src={logo}  alt="logo" />
+                <p >Projects </p>
+                </div>
         
                 }
             </article>
@@ -40,9 +43,10 @@ class Container extends Component {
                
                  <Resume/>
                 : 
-            
-                <p>Resume </p>
-             
+                <div className="panel-title">
+                <img src={logo}  alt="logo" />    
+                <p >Resume </p>
+                </div>
                 }
              </article>
 
