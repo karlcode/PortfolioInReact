@@ -6,10 +6,13 @@ import Container from './components/Container.js'
 class App extends Component {
   constructor() {
   super();
-  this.state = {clicked: false, clicked2: false}
+  this.state = {loading: true, clicked: false, clicked2: false}
   this.toggleHighlight = this.toggleHighlight.bind(this)
   this.toggleResume = this.toggleResume.bind(this)
 }
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 1000); 
+  }
   toggleHighlight () {
     this.setState({clicked: !this.state.clicked});
   }
@@ -17,6 +20,10 @@ class App extends Component {
     this.setState({clicked2: !this.state.clicked2});
   }
   render() {
+    const { loading } = this.state;
+    if(loading) {
+      return null; // render null when app is not ready
+    }
     return (
       <div className="App">
         

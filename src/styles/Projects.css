@@ -25,7 +25,8 @@
     
 }
 .project-blurb{
-    line-height: 0;
+    text-align:right;
+    line-height: 1;
     z-index: 1;
     position: absolute;
     padding: 5%;
@@ -37,6 +38,6 @@
     transition: all ease 0.5s;
 }
 .project-blurb:hover{
-    opacity:0.9;
+    opacity:0.95;
     background-color: ghostwhite;
 }

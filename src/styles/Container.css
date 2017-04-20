@@ -11,7 +11,7 @@
     left: 33vw;
     width: 67vw;
     height: 100%;
-    background-color: lightcoral;
+    background-color: tomato;
     text-align: center;
     transition: all ease 0.5s;
 }
@@ -47,21 +47,33 @@
     background-color: white;
     cursor: pointer;
     /*box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
-     -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
 }
+
 
 .container-title{
     font-size: 23px;
     line-height: 1.4em;
    
 }
+.back-button{
+    position:absolute;
+    z-index: 2;
+    left:-5%;
+    top:40%;
+    cursor:pointer;
+}
 .panel-title{
     position:absolute;
-    top:50%;
+    top:20%;
     left:50%;
     transform: translateX(-50%);
+}
+
+.panel-title img{
+    max-width: 200px;
 }
 @media all and (max-width: 1200px) {
   .container-box {
